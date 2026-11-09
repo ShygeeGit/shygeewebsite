@@ -1,21 +1,38 @@
 <!-- taken from w3schools html website lol -->
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 <head>
-<title>Shygee Site</title>
+    <title>Shygee Site</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
 
-<img
-    width = 200
-    height = 200
-    src = 'hi.png'
-    alt = 'i am four'
-/>
+<div class="gay-hello">
+    <img
+        id = "me"
+        width = 250
+        height = 250
+        src = 'hi.png'
+        alt = 'i am four'
+    />
+    <h1>Hello there</h1>
+</div>
 
-<h1>Hello there</h1>
-<p>this site is very wip lol</p>
-<p>website is open source on my <a  href=https://github.com/ShygeeGit/shygeewebsite>github</a></p>
+<p>this site is very wip lol
+    <br>website is open source on my 
+    <a  href=https://github.com/ShygeeGit/shygeewebsite>github</a>
+</p>
+
+<script>
+    gsap.to("#me", {
+        duration: 2.5,
+        ease: "expo.out", 
+        width: 200,
+        height: 200
+    });
+</script>
 
 </body>
 </html>

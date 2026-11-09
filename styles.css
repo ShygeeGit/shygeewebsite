@@ -1,5 +1,5 @@
 body {
-    background-color: #919191;
+    background-color: #3a2832;
 }
 
 h1 {
@@ -10,7 +10,30 @@ h1 {
         0px 0px 8px black;
 }
 
+.page {
+    box-sizing: border-box;
+    position: relative;
+    min-height: 75vh;
+    background: linear-gradient(180deg, #FAEFFF 0%, #CF95EA 100%);
+    border: 6px solid #ac7fa3;
+    border-radius: 14px;
+}
+
+.glow {
+    position: absolute;
+    left: 2.36%; right: 2.36%;
+    top: 15.19%; bottom: 2.84%;
+    background: linear-gradient(180deg, #faefff00 20%, #f3daff 100%);
+    filter: blur(24.05px);
+    border-radius: 45px;
+    pointer-events: none;
+}
+
 .gay-hello {
     display: flex;
     align-items: center;
+}
+
+#me {
+    z-index: 2;
 }
